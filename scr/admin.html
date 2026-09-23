@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoViet – Quản Trị</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <span class="logo-pin">📍</span><span class="logo-go">Go</span><span class="logo-viet">Viet</span>
+        <span class="admin-chip">Admin</span>
+      </a>
+      <a href="index.html" class="btn-back-site">← Về trang chính</a>
+    </nav>
+  </header>
+
+  <div class="admin-hero">
+    <h1>⚙️ Quản Trị Địa Danh</h1>
+    <p>Thêm địa danh mới — dữ liệu được lưu tự động vào trình duyệt</p>
+  </div>
+
+  <div class="admin-wrap">
+
+    <!-- FORM -->
+    <div class="admin-left">
+      <div class="panel">
+        <h2 class="panel-title">➕ Thêm Địa Danh Mới</h2>
+        <form id="addForm" novalidate>
+          <div id="formBody"></div>
+          <button type="submit" class="btn-submit">Thêm địa danh</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- DANH SÁCH ĐÃ THÊM -->
+    <div class="admin-right">
+      <div class="panel">
+        <div class="panel-title-row">
+          <h2 class="panel-title">📋 Đã Thêm</h2>
+          <span class="custom-count" id="customCount">0 địa danh</span>
+        </div>
+        <div id="customList"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

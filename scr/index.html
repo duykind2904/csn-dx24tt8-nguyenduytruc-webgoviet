@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoViet – Khám Phá Việt Nam</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="logo" onclick="closeMobile()">
+        <span class="logo-pin">📍</span><span class="logo-go">Go</span><span class="logo-viet">Viet</span>
+      </a>
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+        <li><a href="#destinations" class="nav-link">Địa Danh</a></li>
+        <li><a href="#about" class="nav-link">Giới Thiệu</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Mở menu" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-link" onclick="closeMobile()">Trang Chủ</a>
+      <a href="#destinations" class="mobile-link" onclick="closeMobile()">Địa Danh</a>
+      <a href="#about" class="mobile-link" onclick="closeMobile()">Giới Thiệu</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== TRANG CHỦ ===== -->
+    <section id="page-home" class="page">
+
+      <div class="hero">
+        <div class="hero-inner">
+          <div class="hero-badge">🇻🇳 Khám Phá Việt Nam</div>
+          <h1 class="hero-title">Hành Trình Tuyệt Vời<br>Đang Chờ Bạn <span>Khám Phá</span></h1>
+          <p class="hero-subtitle">Tìm hiểu những địa danh, danh thắng và di sản văn hóa độc đáo trải dài từ Bắc đến Nam</p>
+          <form class="hero-search" id="heroForm">
+            <input type="text" id="heroInput" placeholder="Tìm kiếm địa danh, tỉnh thành..." autocomplete="off" />
+            <button type="submit">Tìm kiếm</button>
+          </form>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong id="stat-total"></strong><span>Địa Danh</span></div>
+            <div class="hero-stat"><strong>3</strong><span>Miền</span></div>
+            <div class="hero-stat"><strong>6</strong><span>Loại Hình</span></div>
+            <div class="hero-stat"><strong>6</strong><span>Di sản UNESCO</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <h2 class="section-title">Địa Danh Nổi Bật (theo đánh giá)</h2>
+          <a href="#destinations" class="section-link">Xem tất cả →</a>
+        </div>
+        <div id="featured-grid" class="cards-grid"></div>
+        <div id="home-pagination" class="pagination"></div>
+      </div>
+
+    </section>
+
+    <!-- ===== DANH SÁCH ===== -->
+    <section id="page-destinations" class="page hidden">
+
+      <div class="dest-header">
+        <h1>Khám Phá Địa Danh</h1>
+        <p id="dest-subtitle">Tất cả địa danh nổi tiếng trên khắp đất nước Việt Nam</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-inner">
+          <div class="search-wrap">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm địa danh..." autocomplete="off" />
+            <button class="search-clear" id="searchClear" title="Xóa">✕</button>
+          </div>
+          <select class="filter-select" id="regionSelect">
+            <option value="">Tất cả miền</option>
+            <option value="Bắc">Miền Bắc</option>
+            <option value="Trung">Miền Trung</option>
+            <option value="Nam">Miền Nam</option>
+          </select>
+          <select class="filter-select" id="categorySelect">
+            <option value="">Tất cả loại</option>
+          </select>
+          <select class="filter-select" id="sortSelect">
+            <option value="default">Mặc định</option>
+            <option value="rating-desc">Đánh giá cao nhất</option>
+            <option value="name-asc">Tên A → Z</option>
+            <option value="name-desc">Tên Z → A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="results-bar">
+        <p class="results-count">Tìm thấy <strong id="result-count">0</strong> địa danh</p>
+        <button class="btn-reset hidden" id="resetBtn">Xóa bộ lọc</button>
+      </div>
+
+      <div class="section" style="padding-top: 20px">
+        <div id="cards-grid" class="cards-grid"></div>
+        <div id="empty-msg" class="empty hidden">
+          <div class="empty-icon">🔍</div>
+          <h3>Không tìm thấy kết quả</h3>
+          <p>Thử thay đổi từ khóa hoặc điều chỉnh bộ lọc tìm kiếm</p>
+        </div>
+        <div id="pagination" class="pagination"></div>
+      </div>
+
+    </section>
+
+    <!-- ===== CHI TIẾT ===== -->
+    <section id="page-detail" class="page hidden">
+
+      <div id="detail-hero" class="detail-hero">
+        <img id="detail-hero-img" class="detail-hero-img" src="" alt="" />
+        <div class="detail-hero-inner">
+          <div id="detail-emoji" class="detail-emoji"></div>
+          <h1 id="detail-name" class="detail-name"></h1>
+          <p id="detail-province" class="detail-province"></p>
+        </div>
+      </div>
+      <div id="detail-gallery" class="detail-gallery"></div>
+
+      <div class="detail-body">
+        <a href="#destinations" class="back-btn">← Quay lại danh sách</a>
+
+        <div class="detail-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon">🗺️</div>
+            <div class="info-card-label">Khu vực</div>
+            <div id="detail-region" class="info-card-value"></div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🏷️</div>
+            <div class="info-card-label">Loại hình</div>
+            <div id="detail-category" class="info-card-value"></div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🗓️</div>
+            <div class="info-card-label">Thời điểm lý tưởng</div>
+            <div id="detail-besttime" class="info-card-value"></div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">⭐</div>
+            <div class="info-card-label">Đánh giá</div>
+            <div id="detail-rating" class="info-card-value"></div>
+          </div>
+        </div>
+
+        <div class="detail-section">
+          <h2 class="detail-section-title">Giới thiệu</h2>
+          <p id="detail-desc" class="detail-desc"></p>
+        </div>
+
+        <div class="detail-section">
+          <h2 class="detail-section-title">Điểm nổi bật</h2>
+          <div id="detail-highlights" class="highlights-list"></div>
+        </div>
+
+        <div id="detail-related-section" class="detail-section hidden">
+          <h2 class="detail-section-title">Địa danh tương tự</h2>
+          <div id="detail-related" class="related-grid"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== GIỚI THIỆU ===== -->
+    <section id="page-about" class="page hidden">
+
+      <div class="about-hero">
+        <h1>📍 Về GoViet</h1>
+        <p>Ứng dụng web đơn trang giới thiệu các địa danh và điểm đến nổi tiếng tại Việt Nam</p>
+      </div>
+
+      <div class="about-body">
+        <div class="about-card">
+          <h2>🎯 Mục tiêu</h2>
+          <p>GoViet được xây dựng nhằm giới thiệu và quảng bá các địa danh, danh thắng nổi tiếng trên khắp đất nước Việt Nam đến với người dùng một cách trực quan và dễ dàng.</p>
+          <p>Ứng dụng cho phép người dùng tìm kiếm, lọc và khám phá thông tin về các địa điểm du lịch theo khu vực, loại hình và đánh giá mà không cần tải lại trang.</p>
+        </div>
+        <div class="about-card">
+          <h2>⚙️ Công nghệ sử dụng</h2>
+          <p>Ứng dụng được xây dựng hoàn toàn bằng công nghệ web thuần, không sử dụng framework hay thư viện bên ngoài.</p>
+          <div class="tech-list">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript (ES6+)</span>
+            <span class="tech-badge">JSON / JS Array</span>
+            <span class="tech-badge">VS Code</span>
+            <span class="tech-badge">Live Server</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <h2>✨ Chức năng</h2>
+          <p>• Xem danh sách địa danh nổi tiếng trải dài Bắc – Trung – Nam</p>
+          <p>• Tìm kiếm theo tên, tỉnh thành hoặc từ khóa mô tả</p>
+          <p>• Lọc theo khu vực (Bắc – Trung – Nam) và loại hình du lịch</p>
+          <p>• Sắp xếp theo tên A→Z hoặc đánh giá cao nhất</p>
+          <p>• Phân trang kết quả (6 địa danh mỗi trang)</p>
+          <p>• Xem chi tiết từng địa danh với thông tin đầy đủ và địa danh tương tự</p>
+          <p>• Giao diện thân thiện, responsive trên mọi thiết bị</p>
+        </div>
+        <div class="about-card">
+          <h2>👤 Thông tin sinh viên</h2>
+          <p><strong>Họ và tên:</strong> Nguyễn Duy Trúc</p>
+          <p><strong>Email:</strong> trucnd100697@tvu-onschool.edu.vn</p>
+          <p><strong>Đề tài:</strong> Xây dựng ứng dụng web đơn trang giới thiệu địa danh Việt Nam</p>
+          <p><strong>Lớp / Mã đề tài:</strong> DX24TT8 – CSN</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Template card – không hiển thị trên trang -->
+  <template id="tpl-card">
+    <article class="card">
+      <div class="card-img">
+        <img class="card-photo" src="" alt="" loading="lazy" />
+        <span class="card-badge"></span>
+        <span class="card-rating"></span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag tag-region"></span>
+        </div>
+        <h3 class="card-name"></h3>
+        <p class="card-province"></p>
+        <p class="card-desc"></p>
+        <div class="card-footer">
+          <span class="card-time"></span>
+          <span class="btn-explore">Khám phá →</span>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-pin">📍</span><span class="logo-go">Go</span><span class="logo-viet">Viet</span>
+      </div>
+      <p class="footer-tagline">Khám phá vẻ đẹp Việt Nam qua từng địa danh</p>
+      <p class="footer-copy">© 2024 GoViet · Nguyễn Duy Trúc · CSN DX24TT8</p>
+      <a href="admin.html" class="footer-admin-link">⚙️ Quản trị</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+    <button class="lightbox-next" id="lightboxNext">›</button>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
