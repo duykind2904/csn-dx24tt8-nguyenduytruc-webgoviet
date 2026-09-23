@@ -1,0 +1,387 @@
+Xin chào các anh/chị sinh viên,
+
+Chào mừng anh/chị đã quay lại diễn đàn để tiếp tục quá trình thực hiện đồ án.
+
+Ở Bước 2: Chia sẻ thông tin, chúng ta sẽ bắt đầu tìm hiểu về nền tảng kỹ thuật cần thiết để xây dựng một ứng dụng web đơn trang (thuần).
+
+1. Tìm hiểu về ứng dụng web đơn trang
+
+Anh/chị hãy tìm hiểu và chia sẻ các tài liệu tham khảo liên quan đến những nội dung sau:
+
+Ứng dụng web đơn trang (Single Page Application – SPA) là gì?
+Đặc điểm của một ứng dụng web đơn trang.
+Nguyên lý hoạt động của ứng dụng web đơn trang.
+Sự khác nhau cơ bản giữa ứng dụng web đơn trang và website truyền thống.
+Cách một ứng dụng web đơn trang thay đổi nội dung hiển thị mà không cần tải lại toàn bộ trang là gì?
+Vai trò của HTML, CSS và JavaScript trong việc xây dựng ứng dụng web đơn trang.
+Cách tổ chức và xử lý dữ liệu tĩnh trong ứng dụng, chẳng hạn dữ liệu được khai báo bằng JavaScript Object/Array hoặc lưu dưới dạng JSON.
+Vai trò của trình duyệt và môi trường thực thi trong quá trình chạy ứng dụng web.
+Anh/chị cần tìm kiếm, chọn lọc và sử dụng những nguồn tài liệu có độ tin cậy phù hợp. Có thể ưu tiên tài liệu chính thức của các tổ chức, tài liệu kỹ thuật, giáo trình, sách chuyên ngành và các nguồn học thuật phù hợp.
+
+2. Tài liệu tham khảo
+
+Anh/chị hãy chia sẻ thông tin về danh sách các nguồn tài liệu tham khảo mà anh/chị dự kiến hoặc đã sử dụng để tìm hiểu về ứng dụng web đơn trang, HTML, CSS, JavaScript và các nội dung liên quan đến đề tài của mình bằng cách trả lời trên case study này.
+
+Qua việc kiểm tra tài liệu tham khảo, chúng ta sẽ xác định:
+
+Tài liệu nào là nguồn chính thống.
+Tài liệu nào có giá trị tham khảo cao.
+Tài liệu nào phù hợp với nội dung cần trình bày.
+Danh mục tài liệu tham khảo đã đủ hay chưa.
+Môn học không giới hạn số lượng tài liệu tham khảo. Tuy nhiên, đối với một quyển báo cáo CSN, thông thường khoảng 5–10 tài liệu tham khảo là phù hợp. Nếu nguồn tài liệu khan hiếm, anh/chị cố gắng tìm ít nhất 3 tài liệu có chất lượng.
+
+Sau khi danh sách tài liệu tham khảo được GV phản hồi và góp ý, anh/chị hãy nhập đầy đủ thông tin các tài liệu được sử dụng vào phần Tài liệu tham khảo của quyển báo cáo và sắp xếp theo đúng quy định trong mẫu báo cáo.
+
+Lưu ý: Chỉ liệt kê những tài liệu thực sự được sử dụng trong báo cáo và phải có trích dẫn tương ứng trong nội dung báo cáo.
+
+3. Chuẩn bị môi trường thực hành
+
+Đối với các đề tài do tôi hướng dẫn, anh/chị cần chuẩn bị môi trường phát triển để xây dựng ứng dụng.
+
+Khuyến nghị sử dụng:
+
+Visual Studio Code để soạn thảo mã nguồn.
+HTML5 để xây dựng cấu trúc nội dung.
+CSS3 để thiết kế giao diện.
+JavaScript để xử lý dữ liệu, sự kiện và tương tác người dùng.
+JSON nếu lựa chọn tổ chức dữ liệu thành các tệp dữ liệu riêng.
+Live Server trong Visual Studio Code để chạy ứng dụng trong môi trường web cục bộ.
+Anh/chị không sử dụng các frontend framework như React, Vue, Angular,... trong đề tài này.
+
+Anh/chị cũng không sử dụng backend hoặc cơ sở dữ liệu. Dữ liệu phục vụ ứng dụng là dữ liệu tĩnh và có thể được tổ chức dưới dạng JavaScript Object/Array hoặc JSON theo yêu cầu của đề tài.
+
+Sau khi trả lời câu hỏi trong Bước 2, anh/chị làm việc offline để hoàn thành phần việc được giao. Sau đó, hãy quay lại diễn đàn để tiếp tục Bước 3.
+
+Chúc anh/chị hoàn thành tốt công việc trong tuần.
+
+
+Vậy là chúng ta đã hoàn thành hai bước đầu tiên:
+
+Xác định vấn đề và chủ đề của ứng dụng.
+Tìm hiểu những kiến thức nền tảng và tài liệu tham khảo cần thiết.
+Ở Bước 3, chúng ta sẽ chuyển từ việc tìm hiểu sang phân tích và xác định cách giải quyết vấn đề.
+
+Bước 3: Phân tích, suy luận, so sánh
+
+Anh/chị hãy trả lời giúp tôi các câu hỏi sau:
+
+(1) Mục tiêu của đề tài là gì?
+
+(2) Ứng dụng của anh/chị sẽ cung cấp những nội dung và chức năng nào?
+
+(3) Anh/chị sẽ sử dụng những công nghệ và phương pháp nào để xây dựng ứng dụng?
+
+(4) Anh/chị sẽ tổ chức dữ liệu và giao diện của ứng dụng như thế nào?
+
+Gợi ý cho câu hỏi (1): Mục tiêu
+
+Hãy bám sát tên đề tài để xác định mục tiêu cuối cùng của sản phẩm. Ví dụ, nếu đề tài là: “Xây dựng ứng dụng web đơn trang giới thiệu sách” thì mục tiêu không chỉ đơn giản là "tạo một website giới thiệu sách", mà cần xác định rõ ứng dụng phải cho phép người dùng xem, tìm kiếm, lọc và tra cứu thông tin sách bằng một giao diện web đơn trang. Mục tiêu cần phù hợp với phạm vi của đồ án CSN và khả năng thực hiện bằng HTML, CSS và JavaScript thuần.
+
+Gợi ý cho câu hỏi (2): Nội dung và chức năng
+
+Từ mục tiêu đã xác định, anh/chị hãy phân tích những nội dung và chức năng mà ứng dụng cần có. Tùy theo chủ đề, ứng dụng có thể bao gồm:
+
+Trang chủ.
+Danh sách đối tượng.
+Phân trang.
+Tìm kiếm.
+Lọc theo thể loại/loại/chủ đề.
+Sắp xếp.
+Xem thông tin chi tiết.
+Điều hướng giữa các khu vực nội dung.
+Hiển thị thông báo khi không có kết quả.
+Các thành phần giao diện tương tác khác phù hợp với chủ đề.
+Anh/chị cần phân biệt rõ: Chức năng bắt buộc và chức năng mở rộng. Không nên đưa vào đề tài những chức năng vượt quá phạm vi kỹ thuật như đăng nhập người dùng thực tế (nhưng có thể/được phép giả lập tài khoản người dùng trong file dữ liệu JSON hoặc JS), không quản trị dữ liệu bằng backend, không CRUD với cơ sở dữ liệu,... vì đây không thuộc phạm vi của đồ án này.
+
+Gợi ý cho câu hỏi (3): Công nghệ và phương pháp
+
+Anh/chị cần xác định rõ các công nghệ sử dụng để hiện thực hóa sản phẩm:
+
+HTML/HTML5.
+CSS/CSS3.
+JavaScript thuần (Vanilla JavaScript).
+JSON nếu lựa chọn sử dụng tệp dữ liệu JSON.
+Visual Studio Code.
+Live Server.
+Không sử dụng: frontend framework, backend hoặc cơ sở dữ liệu.
+
+Về phương pháp thực hiện, anh/chị có thể sử dụng: Phương pháp nghiên cứu lý thuyết và Phương pháp nghiên cứu thực nghiệm.
+
+Gợi ý cho câu hỏi (4): Tổ chức dữ liệu và giao diện
+
+Anh/chị cần suy nghĩ trước về cách tổ chức dữ liệu và cách dữ liệu được đưa lên giao diện.
+
+Ví dụ:
+
+Dữ liệu tĩnh
+
+     ↓
+
+JavaScript Object/Array hoặc JSON
+
+     ↓
+
+JavaScript xử lý
+
+     ↓
+
+DOM
+
+     ↓
+
+Giao diện người dùng
+
+ 
+
+Hoặc với chức năng Tìm kiếm/Lọc: 
+
+Người dùng nhập từ khóa/lựa chọn bộ lọc
+
+       ↓
+
+JavaScript xử lý dữ liệu
+
+       ↓
+
+Kết quả phù hợp
+
+       ↓
+
+Cập nhật giao diện
+
+Việc phân tích trước luồng xử lý sẽ giúp anh/chị dễ dàng hơn khi bước sang giai đoạn thiết kế và lập trình. Từ kết quả của Bước 3, anh/chị hãy tiếp tục hoàn thành các nội dung trong quyển báo cáo.
+
+Phần Mở đầu
+
+Bổ sung các nội dung:
+
+Mục tiêu của đề tài (Sau mục Lý do chọn đề tài đã làm ở bước 1).
+Nội dung thực hiện (Với mục tiêu đã xác định thì anh/chị cần thực hiện những công việc/nội dung nào để hoàn thành mục tiêu đặt ra).
+Đối tượng nghiên cứu (các đối tượng anh/chị chọn nghiên cứu để có thể thực hiện được nội dung đã xác định).
+Phương pháp thực hiện (anh/chị chọn phương pháp nào để thực hiện đề tài).
+Phạm vi đề tài (đề tài có phạm vi đến đâu, không bao gồm những gì).
+Chương 1: Tổng quan
+
+Trình bày tổng quan về:
+
+Ứng dụng web đơn trang.
+Đặc điểm và nguyên lý hoạt động.
+HTML, CSS và JavaScript.
+Dữ liệu tĩnh và cách tổ chức dữ liệu.
+Các công nghệ/công cụ sử dụng trong đề tài.
+Tổng quan về chủ đề/nghiệp vụ mà đề tài của anh/chị sẽ áp dụng cho demo.
+Chương 2: Cơ sở lý thuyết
+
+Trình bày chi tiết hơn những kiến thức cần thiết để xây dựng ứng dụng, chẳng hạn:
+
+Cấu trúc HTML.
+CSS và responsive design.
+JavaScript.
+DOM.
+Event.
+Array/Object.
+Các phương thức xử lý dữ liệu như filter(), find(), sort(), map()... nếu có sử dụng.
+JSON và cách đọc dữ liệu JSON nếu đề tài sử dụng JSON.
+Phân trang.
+Tìm kiếm.
+Lọc dữ liệu.
+Anh/chị không nhất thiết phải trình bày tất cả kiến thức của HTML, CSS và JavaScript. Chỉ tập trung vào những kiến thức thực sự được sử dụng để xây dựng sản phẩm. Và hãy nhớ rằng, nội dung lý thuyết được trình bày trong chương 1 và chương 2 (nhất là những định nghĩa, khái niệm, lịch sử phát triển, công thức,…) cần được trích dẫn tài liệu tham khảo tương ứng với những tài liệu mà anh/chị đã chọn tham khảo ở bước 2.
+
+Nếu cần, anh/chị có thể gộp Chương 1 và Chương 2 thành một chương lớn. Tuy nhiên, nếu tách thành hai chương thì quyển báo cáo sẽ có cấu trúc rõ ràng và giúp anh/chị rèn luyện cách trình bày một báo cáo kỹ thuật.
+
+Cấu trúc báo cáo được khuyến nghị:
+
+Chương 1: Tổng quan
+
+Chương 2: Cơ sở lý thuyết
+
+Chương 3: Hiện thực hóa nghiên cứu
+
+Chương 4: Kết quả thực hiện
+
+Chương 5: Kết luận và hướng phát triển
+
+Dĩ nhiên, ngoài 5 chương này, anh/chị vẫn phải thực hiện các phần chung theo mẫu quyển báo cáo.
+
+Sau khi hoàn thành Bước 3, anh/chị hãy làm việc offline để bắt đầu thiết kế ứng dụng, vận dụng những kiến thức tìm hiểu được bắt đầu xây dựng ứng dụng minh họa theo chủ đề trong tên đề tài đã đăng ký.
+
+Hẹn gặp lại anh/chị ở Bước 4!
+
+Trân trọng.
+
+Xin chào anh/chị sinh viên,
+
+Tuần này chúng ta sẽ sang Bước 4: Kết luận giải pháp.
+
+Sau khi đã tìm hiểu về ứng dụng web đơn trang, HTML, CSS, JavaScript và phân tích các chức năng cần có, anh/chị cần đưa ra một giải pháp cụ thể để bắt đầu xây dựng sản phẩm.
+
+Ở bước này, anh/chị cần chuyển từ câu hỏi:"Tôi cần xây dựng cái gì?" sang: "Tôi sẽ xây dựng nó như thế nào?". Ở cuối Chương 2 trong cuốn báo cáo, anh/chị cần có một đoạn kết luận để xác định rõ giải pháp sẽ được sử dụng trong quá trình thực nghiệm. Anh/chị cũng cần giải thích ngắn gọn vì sao giải pháp này phù hợp với mục tiêu và phạm vi của đề tài.
+
+Ví dụ, tôi có thể trình bày đoạn kết chương 2 như sau:
+
+“Sau khi tìm hiểu về đặc điểm và nguyên lý hoạt động của ứng dụng web đơn trang thì HTML, CSS và JavaScript được lựa chọn làm nền tảng để xây dựng sản phẩm. HTML được sử dụng để xây dựng cấu trúc nội dung, CSS được sử dụng để thiết kế giao diện và JavaScript thuần được sử dụng để xử lý dữ liệu, sự kiện và tương tác với người dùng. Dữ liệu của ứng dụng được tổ chức dưới dạng dữ liệu tĩnh bằng JSON. Đề tài không sử dụng framework, backend hoặc cơ sở dữ liệu nhằm tập trung vào việc tìm hiểu và thực hành các kiến thức nền tảng của phát triển web tĩnh. Ứng dụng được phát triển trong Visual Studio Code và chạy thử bằng Live Server. Dựa trên giải pháp đã lựa chọn, quá trình thiết kế giao diện và xây dựng các chức năng của ứng dụng sẽ được trình bày ở Chương 3.”
+
+Anh/chị cần điều chỉnh đoạn kết luận trên cho phù hợp với đề tài thực tế của mình.
+
+Tiếp theo, công việc của tuần này khá nặng và cần anh/chị tập trung đầu tư nhiều thời gian và công sức hơn bởi vì trong tuần này chúng ta sẽ phải vừa tiến hành xây dựng ứng dụng thực nghiệm vừa phải viết cuốn báo cáo song song.
+
+Ở Chương 3: Hiện thực hóa nghiên cứu, anh/chị cần trình bày quá trình từ hình thành ý tưởng đến xây dựng sản phẩm demo.
+
+3.1. Mô tả đề tài
+
+Mô tả chi tiết: Chủ đề của ứng dụng, Đối tượng sử dụng, Nội dung mà ứng dụng cung cấp, Danh sách các chức năng, Cách người dùng tương tác với ứng dụng, Dữ liệu được sử dụng trong ứng dụng. Anh/chị cần mô tả rõ các chức năng chính, chẳng hạn: Trang chủ có phân trang, Hiển thị danh sách, Tìm kiếm, Lọc, Sắp xếp, Xem chi tiết,… Các chức năng cụ thể cần được điều chỉnh theo chủ đề của từng đề tài.
+
+3.2. Phác thảo giao diện
+
+Dựa trên mô tả ở mục 3.1, anh/chị phác thảo giao diện ứng dụng, có thể sử dụng công cụ chuyên dụng để thiết kế wireframe/mockup hoặc đơn giản hơn là tạo bản phác thảo bằng bảng, trong đó xác định vị trí của các thành phần trên giao diện (anh/chị có thể tùy ý đề xuất giao diện mà anh/chị mong muốn và cho là phù hợp đối với chủ đề và đối tượng người sử dụng mà anh/chị đã xác định ở Phần mở đầu):
+
+Header.
+Logo/tên ứng dụng.
+Thanh điều hướng.
+Khu vực tìm kiếm.
+Bộ lọc.
+Khu vực hiển thị dữ liệu.
+Card/thành phần hiển thị đối tượng.
+Khu vực phân trang.
+Khu vực thông tin chi tiết.
+Footer.
+Bản phác thảo phải giúp người đọc hình dung được cấu trúc giao diện trước khi anh/chị tiến hành lập trình. Cho nên để thống nhất, sau quá trình phác thảo, anh/chị sẽ cần thiết kế giao diện demo bám sát bản phác thảo này.
+
+3.3. Chuẩn bị môi trường và cấu trúc dự án
+
+Anh/chị trình bày:
+
+Cài đặt Visual Studio Code.
+Cài đặt Live Server.
+Cấu trúc thư mục dự án: Cho biết rõ các tệp HTML, CSS, JavaScript, thư mục dữ liệu nếu sử dụng JSON, thư mục hình ảnh/tài nguyên nếu có.
+Tổ chức cấu trúc mã nguồn quan trọng nếu có.
+Nếu anh/chị không sử dụng JSON thì cho biết rõ cách anh/chị tổ chức dữ liệu trực tiếp trong JavaScript, nếu anh/chị sử dụng JSON thì cần cho biết rõ cấu trúc mã nguồn của các file JSON.
+
+3.4. Xây dựng giao diện
+
+Trình bày quá trình: Xây dựng cấu trúc HTML, Thiết kế CSS, Xây dựng bố cục responsive, Tạo các thành phần giao diện, Điều chỉnh giao diện theo bản phác thảo.
+
+3.5. Xây dựng chức năng
+
+Trình bày quá trình hiện thực hóa các chức năng chính. Tùy theo đề tài, có thể bao gồm: Hiển thị dữ liệu, Phân trang, Tìm kiếm, Lọc, Sắp xếp, Xem chi tiết, Điều hướng nội dung và Các chức năng mở rộng khác.
+
+Anh/chị cần giải thích cách thức thực hiện, không chỉ chụp màn hình/chép mã nguồn.
+
+Sau khi hoàn thành ứng dụng, anh/chị trình bày sản phẩm thực tế ở Chương 4: Kết quả thực hiện.
+
+4.1. Giao diện trang chủ
+
+Chụp màn hình đầy đủ giao diện trang chủ của ứng dụng. Cần thể hiện được các thành phần chính và đối chiếu với bản phác thảo đã trình bày ở mục 3.2.
+
+4.2. Giao diện và kết quả các chức năng
+
+Trong mục 4.2, anh/chị có thể chia thành nhiều tiểu mục tùy theo số lượng chức năng.
+
+Ví dụ:
+
+4.2.1 Chức năng tìm kiếm
+4.2.2 Chức năng lọc
+4.2.3 Chức năng phân trang
+4.2.4 Chức năng xem chi tiết
+…
+Nếu có nhiều chức năng tương tự nhau, anh/chị có thể trình bày chung trong một mục.
+
+Lưu ý khi chụp hình: 
+
+- Trước hoặc sau mỗi hình ảnh cần có đoạn mô tả để giải thích hình ảnh đang thể hiện nội dung gì, người dùng cần thực hiện thao tác gì để thấy được gì thêm hay không, có cần nhập liệu không, nếu cần nhập thông tin thì quy tắc nhập là gì, chương trình có thực hiện kiểm tra dữ liệu nhập sai hay không, kiểm tra như thế nào,... Tuyệt đối không chỉ để hình vào một mục rồi thôi, không mô tả gì cho hình.
+
+- Sau mỗi hình cần đặt tên theo cú pháp: Hình [stt chương.stt hình]: Tên hình
+
+Ví dụ:
+
+Hình 4.1: Giao diện trang chủ
+
+Hình 4.2: Kết quả tìm kiếm sách theo từ khóa
+
+Hình 4.3: Kết quả lọc sách theo thể loại
+
+Dạ vâng, đến đây thì tôi đã hướng dẫn xong cho các anh/chị cách thực hiện sản phẩm demo và trình bày chương 3, 4 là hai chương quan trọng nhất của đồ án CSN. Qua quá trình thực hiện xây dựng dự án đề tài và trình bày cuốn báo cáo, anh/chị sẽ từng bước hoàn thành được bước 4 Kết luận giải pháp.
+
+Chúc anh/chị hoàn thành tốt phần việc trên và hãy quay lại diễn đàn để chúng ta tiếp tục bước cuối cùng.
+
+Trân trọng,
+
+Xin chào các anh/chị,
+
+Hôm nay chúng ta sẽ thực hiện Bước 5, cũng là bước cuối cùng trong quá trình nghiên cứu, xây dựng sản phẩm và hoàn thiện quyển báo cáo.
+
+Trước khi sang bước này, anh/chị đã:
+
+Xác định được chủ đề.
+Tìm hiểu kiến thức nền tảng.
+Phân tích yêu cầu.
+Xác định giải pháp.
+Thiết kế giao diện.
+Xây dựng ứng dụng.
+Hoàn thành các chức năng chính.
+Bây giờ chúng ta cần kiểm tra và hoàn thiện sản phẩm. Anh/chị hãy kiểm tra toàn bộ ứng dụng từ giao diện đến chức năng và dữ liệu. Về giao diện, Giao diện có đúng với bản phác thảo không? Bố cục có hợp lý không? Nội dung có đầy đủ không? Hình ảnh có hiển thị đúng không? Giao diện có phù hợp với chủ đề không? Ứng dụng có hiển thị tốt trên các kích thước màn hình khác nhau không? Về chức năng, Dữ liệu có hiển thị đầy đủ không? Tìm kiếm có hoạt động đúng không? Lọc có hoạt động đúng không? Phân trang có hoạt động đúng không? Xem chi tiết có hoạt động đúng không? Các nút bấm và liên kết có hoạt động không? Khi không có kết quả tìm kiếm/lọc, ứng dụng có thông báo phù hợp không? Có lỗi JavaScript trong quá trình sử dụng không?Về dữ liệu, Dữ liệu có chính xác không? Có dữ liệu bị trùng không? Có đối tượng nào thiếu thông tin không? Hình ảnh có bị mất liên kết không? Đường dẫn đến các tệp CSS/JavaScript/hình ảnh có chính xác không?
+
+Anh/chị cần tự kiểm tra toàn bộ ứng dụng và tiếp tục chỉnh sửa nếu phát hiện vấn đề. Những vấn đề không thể giải quyết trong phạm vi của đề tài có thể được trình bày cụ thể trong phần Hạn chế của đề tài.
+
+Sau khi kiểm thử và hoàn thiện ứng dụng, anh/chị viết tiếp Chương 5: Kết luận và hướng phát triển
+
+5.1 Kết luận
+
+Trình bày tóm lược những nội dung đã tìm hiểu, những kiến thức HTML, CSS, JavaScript đã áp dụng cùng với những kỹ năng đã đạt được, những chức năng đã xây dựng và mức độ hoàn thành so với mục tiêu ban đầu.
+
+5.2 Ưu điểm
+
+Tự đánh giá những điểm mà sản phẩm đã thực hiện tốt, chẳng hạn:
+
+5.3 Hạn chế
+
+Cần trình bày cụ thể, không viết chung chung. Ví dụ như Dữ liệu hiện tại được khai báo dưới dạng dữ liệu tĩnh nên khi cần cập nhật số lượng lớn sản phẩm, lập trình viên phải chỉnh sửa dữ liệu trong mã nguồn.
+
+Việc nhận ra hạn chế không có nghĩa là sản phẩm không đạt yêu cầu. Ngược lại, khả năng nhận biết những giới hạn của sản phẩm là một phần quan trọng của quá trình học tập và thực hiện đồ án.
+
+5.4 Hướng phát triển
+
+Từ những hạn chế đã xác định, anh/chị có thể đề xuất những hướng phát triển trong tương lai gần cho dự án mà anh/chị đã thực hiện. Lưu ý: Đây chỉ là hướng phát triển, không yêu cầu anh/chị phải thực hiện các chức năng này trong phạm vi đồ án hiện tại.
+
+ 
+
+Sau khi hoàn thành và kiểm tra ứng dụng, anh/chị cần công bố mã nguồn theo yêu cầu của chung của môn học này.
+
+Anh/chị có thể sử dụng GitHub ở chế độ Public hoặc thư mục Google Drive được chia sẻ công khai, theo quy định chung của môn học (nếu có). Nếu trên khóa học, có cung cấp Yêu cầu/Hướng dẫn nộp bài thì anh/chị thực hiện theo hướng dẫn/yêu cầu đó. Nếu không có hướng dẫn, anh/chị thực hiện đặt tên Repository/thư mục được đặt theo quy tắc: [csn-hotensv-shortnameproject]. Ví dụ, sinh viên Nguyễn Văn A thực hiện đề tài: “Xây dựng ứng dụng web đơn trang giới thiệu sách” có thể đặt tên Repository/thư mục: csn-nguyenvana-webdontranggioithieusach. Mã nguồn cần được tổ chức rõ ràng và bao gồm đầy đủ các thành phần cần thiết để người khác có thể xem và chạy thử dự án.
+
+Nếu có thể, anh/chị nên cung cấp thêm link chạy thử sản phẩm để GV có thể trực tiếp kiểm tra ứng dụng.
+
+Hoàn thiện và nộp bài: Sau khi hoàn thành dự án và quyển báo cáo, anh/chị cần:
+
+Kiểm tra lại toàn bộ nội dung báo cáo.
+Cập nhật danh mục tài liệu tham khảo.
+Kiểm tra việc trích dẫn tài liệu.
+Đảm bảo tất cả tài liệu được sử dụng để trích dẫn trong bài đều có trong danh mục tài liệu tham khảo.
+Không đưa những tài liệu không được sử dụng vào danh mục tài liệu tham khảo.
+Kiểm tra mã nguồn.
+Kiểm tra link truy cập sản phẩm.
+Kiểm tra link Repository/Drive.
+Soạn slide báo cáo (trình bày tóm lược đề tài và cung cấp link GitHub/link share code dự án
+Ghi hình anh/chị báo cáo slide và chạy demo sản phẩm
+Anh/chị hãy đọc kỹ kế hoạch học tập được công bố để nộp đúng thời gian và nộp đủ theo yêu cầu. Nội dung cần nộp thường là (anh/chị nhớ kiểm tra lại yêu cầu nộp trong Kế hoạch học tập nhé):
+
+File Word: Quyển báo cáo hoàn chỉnh theo đúng mẫu.
+File PowerPoint: Slide báo cáo.
+Mã nguồn: Repository GitHub Public hoặc thư mục Google Drive Public.
+Link chạy thử ứng dụng: nếu có.
+Video thuyết trình và chạy demo
+Đối với các file có dung lượng lớn như video, anh/chị nên upload lên dịch vụ lưu trữ trực tuyến và cung cấp đường dẫn công khai thay vì tải trực tiếp lên LMS nếu hệ thống có giới hạn dung lượng. File báo cáo, slide và các file bắt buộc khác phải được nộp đúng nơi và đúng thời hạn theo thông báo của môn học.
+
+Dạ vâng, như vậy đến đây anh/chị đã hoàn thành toàn bộ quy trình của Case Study 2:
+
+Đặt vấn đề → Chia sẻ thông tin → Phân tích, suy luận, so sánh → Kết luận giải pháp → Áp dụng, kiểm tra.
+
+Quan trọng nhất, hãy nhớ rằng mục tiêu của đồ án này không phải là tạo ra một hệ thống web có quy mô lớn, mà là giúp anh/chị hiểu được những nguyên lý nền tảng của phát triển web và tự mình hiện thực hóa một ứng dụng web đơn trang bằng HTML, CSS và JavaScript thuần.
+
+Hãy tập trung vào việc hiểu mã nguồn mà mình viết, hiểu dữ liệu được tổ chức như thế nào, hiểu cách JavaScript tương tác với giao diện và hiểu cách các chức năng tìm kiếm, lọc, phân trang và hiển thị dữ liệu được hiện thực hóa.
+
+Đừng chỉ quan tâm đến việc "làm cho sản phẩm chạy được". Hãy cố gắng hiểu vì sao sản phẩm chạy được và mỗi thành phần trong sản phẩm có vai trò gì. Đây chính là kiến thức nền tảng quan trọng để anh/chị tiếp tục học và phát triển nghề nghiệp trong tương lai nếu anh/chị lựa chọn lĩnh vực web làm hướng đi sắp tới.
+
+Chúc anh/chị hoàn thành tốt đồ án của mình!
+
+Trân trọng!
